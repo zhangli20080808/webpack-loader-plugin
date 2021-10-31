@@ -35,7 +35,16 @@ module.exports = {
         test: /\.md$/,
         use: [
           {
+            loader: './markdownHtml',
+            options:{
+              headingStyle: 'atx'
+            }
+          },
+          {
             loader: './markLoader',
+            options:{
+              headerIds: false
+            }
           },
         ],
       },
