@@ -1,11 +1,11 @@
 const path = require('path');
-
+const BundleSizeWebpackPlugin = require('./plugins/BundleSizePlugins');
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].js',
+    filename: 'bundle.js',
   },
   // resolveLoader: {
   //   modules: ["node_modules", "./myLoaders"],
@@ -36,18 +36,23 @@ module.exports = {
         use: [
           {
             loader: './markdownHtml',
-            options:{
-              headingStyle: 'atx'
-            }
+            options: {
+              headingStyle: 'atx',
+            },
           },
           {
             loader: './markLoader',
-            options:{
-              headerIds: false
-            }
+            options: {
+              headerIds: false,
+            },
           },
         ],
       },
     ],
   },
+  plugins: [
+    new BundleSizeWebpackPlugin({
+      sizeLimit: 3,
+    }),
+  ],
 };
