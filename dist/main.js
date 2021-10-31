@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./readme.md":
+/*!*******************!*\
+  !*** ./readme.md ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<h2 id=\\\"什么是-loader？\\\">什么是 loader？</h2>\\n<p>Loader 就是⼀个函数，声明式函数，不能⽤箭头函数\\n拿到源代码，作进⼀步的修饰处理，再返回处理后的源码就可以了</p>\\n<ul>\\n<li>官⽅⽂档：<a href=\\\"https://webpack.js.org/contribute/writing-a-loader/\\\">https://webpack.js.org/contribute/writing-a-loader/</a></li>\\n<li>接⼝⽂档：<a href=\\\"https://webpack.js.org/api/loaders/\\\">https://webpack.js.org/api/loaders/</a></li>\\n</ul>\\n\"\n\n//# sourceURL=webpack:///./readme.md?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// import css from \"./index.less\";\nconsole.log(\"开课吧zzzz,webpack-loader!\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _readme_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../readme.md */ \"./readme.md\");\n/* harmony import */ var _readme_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_readme_md__WEBPACK_IMPORTED_MODULE_0__);\n// import css from \"./index.less\";\nconsole.log('开课吧zzzz,webpack-loader!');\n\ndocument.getElementById('root').innerHTML = _readme_md__WEBPACK_IMPORTED_MODULE_0___default.a;\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

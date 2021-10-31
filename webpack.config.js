@@ -10,8 +10,7 @@ module.exports = {
   // resolveLoader: {
   //   modules: ["node_modules", "./myLoaders"],
   // },
- 
- 
+
   module: {
     rules: [
       {
@@ -32,6 +31,14 @@ module.exports = {
       //   test: /\.less$/,
       //   use: ["style-loader", "lessLoader"],
       // },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: './markLoader',
+          },
+        ],
+      },
     ],
   },
 };
